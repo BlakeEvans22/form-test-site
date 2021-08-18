@@ -10,12 +10,6 @@
       href="https://s.pageclip.co/v1/pageclip.css"
       media="screen"
     />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
-      crossorigin="anonymous"
-    />
   </head>
   <body>
     Test Form Site
@@ -24,10 +18,34 @@
       class="pageclip-form"
       method="post"
     >
-      <!-- Replace these inputs with your own. Make sure they have a "name" attribute! -->
-      <input type="text" name="name" placeholder="Art Vandelay" />
-      <input type="email" name="email" placeholder="avandelay@latex.com" />
+      <br />
+      <form>
+        <label for="name">Name:</label>
+        <br />
+        <input type="text" name="name" id="name" placeholder="Art Vandelay" />
+        <br />
+        <label for="email">Email:</label>
+        <br />
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="avandelay@latex.com"
+        />
+      </form>
+      <br />
 
+      <label for="rating">Rating</label>
+
+      <form id="rating">
+        <input type="radio" id="good" name="how_good" value="good" />
+        <label for="good">Good</label><br />
+        <input type="radio" id="better" name="how_good" value="better" />
+        <label for="better">Better</label><br />
+        <input type="radio" id="best" name="how_good" value="Best" />
+        <label for="best">Best</label>
+      </form>
+      <br />
       <!-- This button will have a loading spinner. Keep the inner span for best results. -->
       <button type="submit" class="pageclip-form__submit">
         <span>Send</span>
